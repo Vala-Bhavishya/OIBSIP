@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Archite – Interior Design Agency</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/WebDev-Task1-LandingPage.css">
+</head>
+
+<body>
+
+    <!-- ============ HEADER + HERO ============ -->
+    <section class="hero">
+        <input type="checkbox" class="sr" id="navtoggle">
+        <!-- Background image: add in CSS (.hero .bg) or replace with <img> -->
+        <div class="ph bg">
+            <img src="https://thememarch.com/demo/html/archite/img/bannerOneBg.jpg" alt="Hero background image">
+        </div>
+
+        <header class="header container">
+            <a href="#" class="logo">Archite<span>.</span></a>
+            <label for="navtoggle" class="menu-btn" aria-label="Toggle menu">&#9776;</label>
+            <nav class="nav" id="nav">
+                <a href="#">Home</a><a href="#about">About us</a><a href="#services">Services</a>
+                <a href="#projects">Portfolio</a><a href="#news">Blog</a><a href="#contact">Contact us</a><a
+                    href="#">Pages</a>
+            </nav>
+            <button class="round-btn" aria-label="Open panel">&#9776;</button>
+        </header>
+
+        <div class="container hero-content">
+            <h1><span class="type l1">Making Your</span><span class="type l2">Dream Space</span></h1>
+            <p>Welcome to our interior design agency! Our team of experienced designers and decorators is passionate
+                about creating beautiful, functional spaces that enhance our client's lives.</p>
+            <a href="#projects" class="btn">Portfolio</a>
+        </div>
+        <a class="side-left" href="mailto:hello@archito.com">hello@archito.com <span>(406) 555-0120</span></a>
+        <div class="side-right"><a href="#">f</a><a href="#">in</a><a href="#">t</a><i></i><span>Follow us</span></div>
+        <a class="scroll" href="#about"><span>Scroll</span></a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about-top reveal">
+                <h2>Transforming Spaces<br>Elevating Lives</h2>
+                <div>
+                    <p>Welcome to our interior design agency! Our team of experienced designers and decorators is
+                        passionate about creating beautiful, functional spaces that enhance our clients' lives.</p>
+                    <a href="#" class="btn">Learn more</a>
+                </div>
+            </div>
+
+            <div class="about-body">
+                <div class="about-images">
+                    <div class="ph img-a"
+                        style="background-image: url('https://thememarch.com/demo/html/archite/img/aboutOne.jpg');">
+                    </div>
+                    <div class="ph img-b"
+                        style="background-image: url('https://thememarch.com/demo/html/archite/img/aboutOneSmall.jpg');">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Making Your Interior<br>Dream Space</h3>
+                    <h4>Our Story</h4>
+                    <p>Welcome to our interior design agency! Our team of experienced designers and decorators is
+                        passionate about creating beautiful, functional spaces that enhance our clients' lives.</p>
+                    <h4>Our Goal</h4>
+                    <p>Welcome to our interior design agency! Our team of experienced designers and decorators is
+                        passionate about creating beautiful, functional spaces that enhance our clients' lives.</p>
+                </div>
+            </div>
+
+            <div class="stats reveal">
+                <div><strong class="count k" style="--n:11"></strong><span>Project Completed</span></div>
+                <div><strong class="count k" style="--n:5"></strong><span>Happy customers</span></div>
+                <div><strong class="count" style="--n:6"></strong><span>Years Experiences</span></div>
+                <div><strong class="count" style="--n:5"></strong><span>Awards Achievement</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="services section dark" id="services">
+        <div class="container has-slider">
+            <input class="sr" type="radio" name="s" id="s1" checked>
+            <input class="sr" type="radio" name="s" id="s2">
+            <input class="sr" type="radio" name="s" id="s3">
+            <input class="sr" type="radio" name="s" id="s4">
+            <input class="sr" type="radio" name="s" id="s5">
+            <div class="row-between">
+                <h2>Our Expert Interior<br>Design Services</h2>
+                <div class="arrows">
+                    <div class="pair p1"><label for="s5" aria-label="Previous">&#8249;</label><label for="s2"
+                            aria-label="Next">&#8250;</label></div>
+                    <div class="pair p2"><label for="s1" aria-label="Previous">&#8249;</label><label for="s3"
+                            aria-label="Next">&#8250;</label></div>
+                    <div class="pair p3"><label for="s2" aria-label="Previous">&#8249;</label><label for="s4"
+                            aria-label="Next">&#8250;</label></div>
+                    <div class="pair p4"><label for="s3" aria-label="Previous">&#8249;</label><label for="s5"
+                            aria-label="Next">&#8250;</label></div>
+                    <div class="pair p5"><label for="s4" aria-label="Previous">&#8249;</label><label for="s1"
+                            aria-label="Next">&#8250;</label></div>
+                </div>
+            </div>
+            <div class="viewport">
+                <div class="track service-grid">
+                    <article class="service-card">
+                        <div class="ph"
+                            style="background-image: url('https://thememarch.com/demo/html/archite/img/blogOne.jpg');">
+                        </div>
+                        <div class="overlay">
+                            <h3>Planning for Architecture Design</h3>
+                            <p>Welcome to our interior design agency! Our team of experienced designers</p><a
+                                href="#">Learn more &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="service-card">
+                        <div class="ph"
+                            style="background-image: url('https://thememarch.com/demo/html/archite/img/blogTwo.jpg');">
+                        </div>
+                        <div class="overlay">
+                            <h3>Installation Space Planning &amp; Luxury Interior Design</h3>
+                            <p>Welcome to our interior design agency! Our team of experienced designers</p><a
+                                href="#">Learn more &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="service-card">
+                        <div class="ph"
+                            style="background-image: url('https://thememarch.com/demo/html/archite/img/blogThree.jpg');">
+                        </div>
+                        <div class="overlay">
+                            <h3>Planning &amp; Installation of Space</h3>
+                            <p>Welcome to our interior design agency! Our team of experienced designers</p><a
+                                href="#">Learn more &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="service-card">
+                        <div class="ph"
+                            style="background-image: url('https://thememarch.com/demo/html/archite/img/serviceBgTwo.jpg');">
+                        </div>
+                        <div class="overlay">
+                            <h3>Space Planning &amp; Installation</h3>
+                            <p>Welcome to our interior design agency! Our team of experienced designers</p><a
+                                href="#">Learn more &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="service-card">
+                        <div class="ph"
+                            style="background-image: url('https://thememarch.com/demo/html/archite/img/serviceBgThree.jpg');">
+                        </div>
+                        <div class="overlay">
+                            <h3>Interior Styling &amp; Decor</h3>
+                            <p>Welcome to our interior design agency! Our team of experienced designers</p><a
+                                href="#">Learn more &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <h2>Our Expert Interior<br>Design Project</h2>
+            <div class="project-grid">
+                <div class="proj-left">
+                    <span class="vtext">Structural Design</span>
+                    <figure>
+                        <div class="ph tall"
+                            style="background-image: url('https://thememarch.com/demo/html/archite/img/projectsOne.jpg');">
+                        </div><a href="#" class="view-proj">View project &rarr;</a>
+                        <figcaption>Project - Luxury Space Design</figcaption>
+                    </figure>
+                    <a href="#" class="btn">View projects</a>
+                </div>
+                <div class="proj-right">
+                    <figure><span class="vtext">Architecture</span>
+                        <div class="ph"
+                            style="background-image: url('https://thememarch.com/demo/html/archite/img/projectsTwo.jpg');">
+                        </div><a href="#" class="view-proj">View
+                            project &rarr;</a>
+                        <figcaption>Project - Office Interior Design</figcaption>
+                    </figure>
+                    <figure><span class="vtext">Landscape</span>
+                        <div class="ph wide"
+                            style="background-image: url('https://thememarch.com/demo/html/archite/img/projectsThree.jpg');">
+                        </div><a href="#" class="view-proj">View project &rarr;</a>
+                        <figcaption>Project - Modern Architecture Design</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FEATURES ============ -->
+    <section class="features section dark2">
+        <div class="container">
+            <div class="feat-top">
+                <div>
+                    <h2>Core Features of Our Interior Design Agency</h2>
+                    <p>Welcome to our interior design agency! Our team of experienced designers and decorators is
+                        passionate about creating beautiful, functional spaces that enhance our client's lives.</p>
+                </div>
+                <div class="ph video-pill"
+                    style="background-image: url(https://thememarch.com/demo/html/archite/img/featuresVideoBg.png);"><a
+                        class="play" href="#video" aria-label="Play video">&#9654;</a></div>
+            </div>
+            <div class="feat-list reveal">
+                <div><small>01</small>
+                    <h4>Creativity</h4>
+                    <p>Welcome to our interior design agency! Our team of experienced designers.</p>
+                </div>
+                <div><small>02</small>
+                    <h4>Management</h4>
+                    <p>Welcome to our interior design agency! Our team of experienced designers.</p>
+                </div>
+                <div><small>03</small>
+                    <h4>Space Planning</h4>
+                    <p>Welcome to our interior design agency! Our team of experienced designers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ TESTIMONIAL + BRANDS ============ -->
+    <section class="testimonial section">
+        <div class="container">
+            <div class="quote-row">
+                <input class="sr" type="radio" name="t" id="t1" checked>
+                <input class="sr" type="radio" name="t" id="t2">
+                <input class="sr" type="radio" name="t" id="t3">
+                <div class="quote-icon">&rdquo;</div>
+                <div class="tslider">
+                    <div class="tslide">
+                        <h3>Choosing the right architecture and interior design agency for your project depends on
+                            several factors, such as their experience.</h3><small>From USA</small><strong>Alex Smith
+                            Emer</strong>
+                        <div class="arrows vert"><label for="t3" aria-label="Previous testimonial">&#8963;</label><label
+                                for="t2" aria-label="Next testimonial">&#8964;</label></div>
+                    </div>
+                    <div class="tslide">
+                        <h3>Their team understood our space from day one and delivered a calm, functional home that
+                            feels like us.</h3><small>From UK</small><strong>Maria Jonson</strong>
+                        <div class="arrows vert"><label for="t1" aria-label="Previous testimonial">&#8963;</label><label
+                                for="t3" aria-label="Next testimonial">&#8964;</label></div>
+                    </div>
+                    <div class="tslide">
+                        <h3>Clear communication, beautiful details and a project that finished on schedule. Highly
+                            recommended.</h3><small>From Canada</small><strong>David Clark</strong>
+                        <div class="arrows vert"><label for="t2" aria-label="Previous testimonial">&#8963;</label><label
+                                for="t1" aria-label="Next testimonial">&#8964;</label></div>
+                    </div>
+                </div>
+            </div>
+            <div class="brands reveal">
+                <div>
+                    <div class="ph logo-ph"
+                        style="background-image: url('https://thememarch.com/demo/html/archite/img/testimonialIconOne.jpg');">
+                    </div>Wof Daks
+                </div>
+                <div>
+                    <div class="ph logo-ph"
+                        style="background-image: url('https://thememarch.com/demo/html/archite/img/testimonialIconTwo.jpg');">
+                    </div>Adka Alko
+                </div>
+                <div>
+                    <div class="ph logo-ph"
+                        style="background-image: url('https://thememarch.com/demo/html/archite/img/testimonialIconThree.jpg');">
+                    </div>Juba Had
+                </div>
+                <div>
+                    <div class="ph logo-ph"
+                        style="background-image: url('https://thememarch.com/demo/html/archite/img/testimonialIconFour.jpg');">
+                    </div>Das Ker
+                </div>
+                <div>
+                    <div class="ph logo-ph"
+                        style="background-image: url('https://thememarch.com/demo/html/archite/img/testimonialIconFive.jpg');">
+                    </div>Kida Jadu
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ TEAM ============ -->
+    <section class="team">
+        <div class="container row-between team-head">
+            <h2>Our Dedicated Interior<br>Designer Team</h2>
+            <p>Welcome to our interior design agency! Our team of experienced designers and decorators is passionate
+                about creating beautiful, functional spaces that enhance our clients' lives.</p>
+        </div>
+        <div class="team-grid slider">
+            <article class="member">
+                <div class="ph"
+                    style="background-image: url(https://thememarch.com/demo/html/archite/img/teamMemberOne.jpg);">
+                </div>
+                <div class="hover">
+                    <div class="soc"><a href="#">f</a><a href="#">in</a><a href="#">t</a></div><a href="#"
+                        class="rm">Read More</a>
+                </div>
+                <div class="info">
+                    <h4>Gerald K. Banks</h4><span>UI/UX Designer</span>
+                </div>
+            </article>
+            <article class="member">
+                <div class="ph"
+                    style="background-image: url(https://thememarch.com/demo/html/archite/img/teamMemberTwo.jpg);">
+                </div>
+                <div class="hover">
+                    <div class="soc"><a href="#">f</a><a href="#">in</a><a href="#">t</a></div><a href="#"
+                        class="rm">Read More</a>
+                </div>
+                <div class="info">
+                    <h4>Gerald K. Banks</h4><span>UI/UX Designer</span>
+                </div>
+            </article>
+            <article class="member">
+                <div class="ph"
+                    style="background-image: url(https://thememarch.com/demo/html/archite/img/teamMemberThree.jpg);">
+                </div>
+                <div class="hover">
+                    <div class="soc"><a href="#">f</a><a href="#">in</a><a href="#">t</a></div><a href="#"
+                        class="rm">Read More</a>
+                </div>
+                <div class="info">
+                    <h4>Gerald K. Banks</h4><span>UI/UX Designer</span>
+                </div>
+            </article>
+            <article class="member">
+                <div class="ph"
+                    style="background-image: url(https://thememarch.com/demo/html/archite/img/teamMemberFour.jpg);">
+                </div>
+                <div class="hover">
+                    <div class="soc"><a href="#">f</a><a href="#">in</a><a href="#">t</a></div><a href="#"
+                        class="rm">Read More</a>
+                </div>
+                <div class="info">
+                    <h4>Gerald K. Banks</h4><span>UI/UX Designer</span>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- ============ VIDEO BANNER ============ -->
+    <section class="video section">
+        <div class="container">
+            <h2>Design Haven Creating Beautiful Spaces That Inspire Your New Space</h2>
+            <div class="ph video-big"
+                style="background-image: url(https://thememarch.com/demo/html/archite/img/introVideoBg.jpg);"><a
+                    class="play" href="#video" aria-label="Play video">&#9654;</a></div>
+        </div>
+    </section>
+
+    <!-- ============ NEWS ============ -->
+    <section class="news section" id="news">
+        <div class="container news-wrap has-slider">
+            <input class="sr" type="radio" name="n" id="n1" checked>
+            <input class="sr" type="radio" name="n" id="n2">
+            <input class="sr" type="radio" name="n" id="n3">
+            <input class="sr" type="radio" name="n" id="n4">
+            <input class="sr" type="radio" name="n" id="n5">
+            <div class="news-head">
+                <h2>Our Inspiration News</h2>
+                <div class="arrows light">
+                    <div class="pair p1"><label for="n5" aria-label="Previous">&#8249;</label><label for="n2"
+                            aria-label="Next">&#8250;</label></div>
+                    <div class="pair p2"><label for="n1" aria-label="Previous">&#8249;</label><label for="n3"
+                            aria-label="Next">&#8250;</label></div>
+                    <div class="pair p3"><label for="n2" aria-label="Previous">&#8249;</label><label for="n4"
+                            aria-label="Next">&#8250;</label></div>
+                    <div class="pair p4"><label for="n3" aria-label="Previous">&#8249;</label><label for="n5"
+                            aria-label="Next">&#8250;</label></div>
+                    <div class="pair p5"><label for="n4" aria-label="Previous">&#8249;</label><label for="n1"
+                            aria-label="Next">&#8250;</label></div>
+                </div>
+            </div>
+            <div class="viewport">
+                <div class="track news-grid">
+                    <article>
+                        <div class="ph"
+                            style="background-image: url(https://thememarch.com/demo/html/archite/img/blogOne.jpg);">
+                        </div>
+                        <h4>Why do I need an architect?</h4>
+                        <p>Welcome to our interior design agency! Our team of experienced designers</p>
+                    </article>
+                    <article>
+                        <div class="ph"
+                            style="background-image: url(https://thememarch.com/demo/html/archite/img/blogTwo.jpg);">
+                        </div>
+                        <h4>Do you know builders?</h4>
+                        <p>Welcome to our interior design agency! Our team of experienced designers</p>
+                    </article>
+                    <article>
+                        <div class="ph"
+                            style="background-image: url(https://thememarch.com/demo/html/archite/img/blogThree.jpg);">
+                        </div>
+                        <h4>Do you know interior?</h4>
+                        <p>Welcome to our interior design agency! Our team of experienced designers</p>
+                    </article>
+                    <article>
+                        <div class="ph"
+                            style="background-image: url(https://thememarch.com/demo/html/archite/img/blogOne.jpg);">
+                        </div>
+                        <h4>How to plan a small space</h4>
+                        <p>Welcome to our interior design agency! Our team of experienced designers</p>
+                    </article>
+                    <article>
+                        <div class="ph"
+                            style="background-image: url(https://thememarch.com/demo/html/archite/img/blogTwo.jpg);">
+                        </div>
+                        <h4>Choosing light and colour</h4>
+                        <p>Welcome to our interior design agency! Our team of experienced designers</p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="foot-grid">
+                <div>
+                    <a href="#" class="logo">Archite<span>.</span></a>
+                    <p>Welcome to our interior design agency! Our team of experienced designers and decorators is
+                        passionate about creating beautiful, functional spaces that enhance our client's lives.</p>
+                    <a href="mailto:info@email.com" class="mail">info@email.com</a>
+                </div>
+                <ul class="foot-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Portfolio</a></li>
+                    <li><a href="#news">Blog</a></li>
+                    <li><a href="#contact">Contact us</a></li>
+                </ul>
+                <div class="foot-contact">
+                    <p>901 N Pitt St., Suite 170 Alexandria, NY, USA</p>
+                    <p>(406) 555-0120</p>
+                    <p>(406) 327-1246</p>
+                </div>
+            </div>
+            <div class="foot-bottom">
+                <div class="social"><a href="#">Facebook</a><a href="#">LinkedIn</a><a href="#">Instagram</a><a
+                        href="#">Twitter</a><a href="#">Dribbble</a></div>
+                <small>Copyright 2023. All Right reserved</small>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="video"><a class="bd" href="#" aria-label="Close"></a>
+        <div class="ph" data-label="Paste your &lt;iframe&gt; / &lt;video&gt; here"></div><a class="close" href="#"
+            aria-label="Close">&times;</a>
+    </div>
+</body>
+
+</html>
