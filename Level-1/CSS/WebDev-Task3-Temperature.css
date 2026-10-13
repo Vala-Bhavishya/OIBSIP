@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+}
+
+main {
+    background-color: #fff;
+    padding: clamp(20px, 5vw, 40px);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;         
+    max-width: 420px;
+}
+
+.headtxt {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: clamp(1.4rem, 5vw, 2rem);
+}
+
+.destxt {
+    font-size: 13px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#temperatureValue,
+#selectUnit,
+#convertButton {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;  
+}
+
+#temperatureValue,
+#selectUnit {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#convertButton {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#convertButton:hover {
+    background-color: #024388;
+}
+
+#errorMessage {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+}
+
+#output {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#celsiusOutput,
+#fahrenheitOutput,
+#kelvinOutput {
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;        
+}
+
+#celsiusOutput span,
+#fahrenheitOutput span,
+#kelvinOutput span {
+    font-weight: bold;
+    text-align: left;
+    flex: 1;
+}
+
+#celsiusOutput strong,
+#fahrenheitOutput strong,
+#kelvinOutput strong {
+    text-align: right;
+    flex: 1;
+    word-break: break-word;
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+        align-items: flex-start; 
+    }
+
+    main {
+        border-radius: 14px;
+    }
+
+    #output {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-height: 600px) {
+    body {
+        align-items: flex-start;
+    }
+}

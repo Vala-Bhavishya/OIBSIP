@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/WebDev-Task3-Temperature.css">
+</head>
+
+<body>
+    <main>
+        <div>
+            <h1 class="headtxt">Temperature Converter</h1>
+            <p class="destxt">Convert between Celsius, Fahrenheit and Kelvin.</p>
+            <label for="temperatureValue">Enter Temperature value:</label>
+            <input type="number" id="temperatureValue" placeholder="Enter value">
+            <label for="inputUnit">Select Unit:</label>
+            <select id="selectUnit">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+            <button id="convertButton">Convert</button>
+            <p id="errorMessage" role="alert"></p>
+        </div>
+
+        <div id="output">
+            <h1 class="headtxt">Result</h1>
+
+            <div id="celsiusOutput">
+                <span>Celsius:</span>
+                <strong id="celsiusValue"></strong>
+            </div>
+
+            <div id="fahrenheitOutput">
+                <span>Fahrenheit:</span>
+                <strong id="fahrenheitValue"></strong>
+            </div>
+
+            <div id="kelvinOutput">
+                <span>Kelvin:</span>
+                <strong id="kelvinValue"></strong>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="../js/WebDev-Task3-Temperature.js"></script>
+</body>
+
+</html>
